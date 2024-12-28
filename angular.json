@@ -18,6 +18,7 @@
             "polyfills": [
               "zone.js"
             ],
+            "baseHref": "/Profile/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
