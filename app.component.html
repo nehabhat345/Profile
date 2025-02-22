@@ -1,0 +1,139 @@
+<div class="full-page">
+  <!-- Header Section with Profile Photo and Contact Info -->
+  <mat-card class="header-card">
+    <mat-card-header>
+      <div class="profile-header">
+        <div class="profile-photo-container">
+          <img src="assets/profile-photo.jpg" alt="Profile Photo" class="profile-photo" />
+        </div>
+        <div class="profile-info">
+          <h1 class="name">{{ name }}</h1>
+          <h2 class="title">{{ title }}</h2>
+          <div class="contact-details">
+            <a href="mailto:{{ contactDetails.email }}" class="contact-link">
+              <mat-icon>email</mat-icon>{{ contactDetails.email }}
+            </a>
+            <a href="{{ contactDetails.linkedin }}" target="_blank" class="contact-link">
+              <mat-icon>link</mat-icon>LinkedIn
+            </a>
+            <a href="{{ contactDetails.github }}" target="_blank" class="contact-link">
+              <mat-icon>github</mat-icon>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </mat-card-header>
+  </mat-card>
+
+  <!-- Main Content -->
+  <mat-card class="main-content-card">
+    <mat-card-content>
+      <!-- Skills Section -->
+      <section class="section skills-section">
+        <h3 class="section-title">Skills & Technologies</h3>
+        <div class="skills-container">
+          <div *ngFor="let skill of skills" class="skill-card">{{ skill }}</div>
+        </div>
+      </section>
+
+      <mat-divider></mat-divider>
+
+      <!-- Work Experience Section -->
+      <section class="section work-experience-section">
+        <h3 class="section-title">Work Experience</h3>
+
+        <!-- Senior Software Engineer - Credit Agricole -->
+        <mat-card class="job-card">
+          <mat-card-header>
+            <mat-card-title>Senior Software Engineer</mat-card-title>
+            <mat-card-subtitle>Credit Agricole Corporate & Investment Bank</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p><strong>05/2022 - Present, Singapore</strong></p>
+            <ul>
+              <li>Leading development of Trade Finance application, delivering frontend interfaces and back-end modules using Java & Angular.</li>
+              <li>Led the creation of a Billing Module leveraging Spring Boot Microservices and Maven, reducing manual processes by 30%.</li>
+              <li>Developed Bank Guarantee UI for a front-office application.</li>
+              <li>Provide L3 support and resolve critical production issues.</li>
+              <li>Collaborate with stakeholders to develop business requirements.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Java, Angular, Spring Boot, SQL, REST API, CI/CD</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-divider></mat-divider>
+
+        <!-- Senior Engineer - L&T Technology Services -->
+        <mat-card class="job-card">
+          <mat-card-header>
+            <mat-card-title>Senior Engineer</mat-card-title>
+            <mat-card-subtitle>L&T Technology Services</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p><strong>02/2021 - 05/2022, Bengaluru, India</strong></p>
+            <ul>
+              <li>Developed UI applications for Telecom Project using React JS.</li>
+              <li>Integrated front-end interfaces with back-end APIs built on Spring Boot Microservices.</li>
+              <li>Automated test cases using Jest and React Testing Library, improving code coverage by 20%.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> React.js, Redux, Spring Boot, Jest, REST API, CI/CD</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-divider></mat-divider>
+
+        <!-- Software Engineer - Newgen Software Technologies -->
+        <mat-card class="job-card">
+          <mat-card-header>
+            <mat-card-title>Software Engineer</mat-card-title>
+            <mat-card-subtitle>Newgen Software Technologies</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p><strong>04/2019 - 01/2021, Noida, India</strong></p>
+            <ul>
+              <li>Created robust Java algorithms and JavaScript validations for the Bank Guarantee module.</li>
+              <li>Fixed UI bugs, enhancing application performance and user experience.</li>
+              <li>Built MIS dashboards using Oracle SQL to improve reporting accuracy.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Java, Angular, Oracle SQL, JavaScript</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-divider></mat-divider>
+
+        <!-- Software Developer - Silverskills Private Limited -->
+        <mat-card class="job-card">
+          <mat-card-header>
+            <mat-card-title>Software Developer</mat-card-title>
+            <mat-card-subtitle>Silverskills Private Limited</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p><strong>05/2017 - 04/2019, Gurgaon, India</strong></p>
+            <ul>
+              <li>Automated data entry processes using Java and Selenium, reducing manual errors by 25%.</li>
+              <li>Developed a financial software web application utilizing Node.js, Express.js, and React.</li>
+              <li>Built dashboards using D3.js to visualize financial metrics.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Node.js, React, D3.js, Selenium</p>
+          </mat-card-content>
+        </mat-card>
+      </section>
+
+      <mat-divider></mat-divider>
+
+      <!-- Education Section -->
+      <section class="section education-section">
+        <h3 class="section-title">Education</h3>
+        <mat-card class="education-card">
+          <mat-card-header>
+            <mat-card-title>Bachelor of Engineering</mat-card-title>
+            <mat-card-subtitle>Model Institute of Engineering and Technology - 2012 - 2016</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Graduated with B.E. in Electronics and Communication. Developed keen interest towards Software Development.</p>
+          </mat-card-content>
+        </mat-card>
+      </section>
+    </mat-card-content>
+  </mat-card>
+</div>
