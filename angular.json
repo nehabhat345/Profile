@@ -10,7 +10,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/Profile",
             "index": "src/index.html",
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Profile:build:production"
+              "browserTarget": "Profile:build:production"
             },
             "development": {
-              "buildTarget": "Profile:build:development"
+              "browserTarget": "Profile:build:development"
             }
           },
           "defaultConfiguration": "development"
